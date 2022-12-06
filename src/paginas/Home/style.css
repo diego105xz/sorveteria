@@ -1,0 +1,117 @@
+main{
+    padding-top: 80px;
+}
+
+.secao-banner {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/public/assets/banner-home.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(249, 219, 121);
+  }
+
+.texto-banner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 30px;
+}
+  
+.texto-banner h1 {
+    font-size: 100px;
+    color: white;
+    text-shadow: 3px 5px 2px black;
+}
+
+.secao-sabores,
+.secao-eventos,
+.secao-sobre{
+    width: 100%;
+    display: flex;
+}
+
+.secao-sabores img,
+.secao-eventos img,
+.secao-sobre img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.secao-sabores div,
+.secao-eventos div,
+.secao-sobre div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 40px;
+}
+
+.secao-sabores h2,
+.secao-eventos h2,
+.secao-sobre h2{
+    font-size: 35px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.secao-sabores span,
+.secao-eventos span,
+.secao-sobre span{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.secao-sabores p,
+.secao-eventos p,
+.secao-sobre p{
+    padding: 0 100px;
+    line-height: 26px;
+    margin: 40px 0;
+}
+
+@media screen and (max-width: 768px){
+    .texto-banner h1{
+        font-size: 50px;
+    }
+
+    .secao-sabores,
+    .secao-sobre{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao-sabores img,
+    .secao-eventos img,
+    .secao-sobre img{
+        width: 100%;
+    }
+
+    .secao-sabores div,
+    .secao-eventos div,
+    .secao-sobre div{
+    width: 100%;
+    text-align: center;
+    padding: 100px 10px;
+    }
+
+    .secao-eventos{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .texto-banner h1{
+        font-size: 40px;
+    }
+}

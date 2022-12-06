@@ -1,0 +1,46 @@
+footer{
+    background-color: black;
+    width: 100%;
+}
+
+.secao-rodape img{
+    width: auto;
+    height: 100px;
+}
+
+.container-rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+    padding: 100px 20px;
+}
+
+.container-rodape div{
+    width: 20%;
+}
+
+.container-rodape p{
+    font-size:  16px;
+}
+
+.direito-autoral{
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .container-rodape{
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
+    .container-rodape div{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+}
